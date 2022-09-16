@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="realphone.css">
+    <title>realphone</title>
+</head>
+<body>
+    <div class="main">
+    <nav>
+        <div class="logo">
+            <img src="/realpone project folder/logo.png" alt="logo">
+
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">phone</a></li>
+                <li><a href="#">accessories</a></li>
+                <li><a href="#">cart</a></li>
+            </ul>
+        </div>
+    </nav>
+<div class="information">
+    <div class="overlay"></div>
+    <img class="mobile" src="/realpone project folder/mobile.png" alt="mobile img">
+    <div id="circle">
+        <div class="feature one">
+            <img src="/realpone project folder/camera.png" alt="camera img.">
+            <div>
+                <h1>camera</h1>
+                <p>12MP, wide angle lens</p>
+            </div>
+        </div>
+        <div class="feature two">
+            <img src="/realpone project folder/processor.png" alt="processor img.">
+            <div>
+                <h1>processor</h1>
+                <p>Snapdragon Octa-core 11nm</p>
+            </div>
+        </div>
+        
+        <div class="feature three">
+            <img src="/realpone project folder/display.png" alt="display img.">
+            <div>
+                <h1>display</h1>
+                <p>6.5" mini-drop fullscreen</p>
+            </div>
+        </div>
+        <div class="feature four">
+            <img src="/realpone project folder/battery.png" alt="battery img.">
+            <div>
+                <h1>battery life</h1>
+                <p>5000mAh, 720hrs standby</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="controls">
+<img src="/realpone project folder/arrow.png" alt="arrow img" id="upbtn">
+<h3>Features</h3>
+<img src="/realpone project folder/arrow.png" alt="arrow img" id="downbtn">
+</div>
+    </div>
+
+<script>
+    var circle = document.getElementById("circle")
+    var upbtn = document.getElementById("upbtn")
+    var downbtn = document.getElementById("downbtn")
+
+    var rotatevalue = circle.style.transform;
+    var rotatesum;
+
+
+    upbtn.onclick = function(){
+        rotatesum = rotatevalue + "rotate(-90deg)";
+        circle.style.transform = rotatesum;
+        rotatevalue = rotatesum;
+
+    }
+
+    downbtn.onclick = function(){
+        rotatesum = rotatevalue + "rotate(90deg)";
+        circle.style.transform = rotatesum;
+        rotatevalue = rotatesum;
+
+    }
+
+</script>
+
+</body>
+</html>
